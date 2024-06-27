@@ -10,12 +10,10 @@ function sortAccountsByLastName(accounts) {
 return last;
 }
 
-
-
-//this portion is where I am currently having trouble. I havnt even began to have trouble on the other two documents yet. 
 function getAccountFullNames(accounts) {
-  const fullAccounts = accounts.map(fullAccount => accounts.firstName + " " + accounts.lastName);
-  console.log(fullAccounts);
+ 
+ const accountFullNames = accounts.map((account) => `${account.name.first} ${account.name.last}`);
+  return accountFullNames;
 }
 
 
